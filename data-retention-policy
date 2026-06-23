@@ -1,0 +1,93 @@
+Meridian Intelligence Group LLC
+Data Retention and Disposal Policy
+Version 1.1  |  Effective Date: June 23, 2026  |  Next Review: June 23, 2027
+EIN: 42-3292793
+
+1. Purpose and Scope
+This Data Retention and Disposal Policy governs the collection, retention, storage, and secure disposal of consumer financial data processed by Meridian Intelligence Group LLC ("Meridian") in connection with its iOS financial intelligence application.
+
+This policy applies to all consumer financial data obtained through Plaid's API, including bank account information, transaction history, account balances, and investment holdings.
+
+2. Data We Collect
+Through our integration with Plaid, Meridian collects and processes the following categories of consumer financial data:
+
+Bank account information (institution name, account type, last 4 digits of account number)
+Account balances (current and available)
+Transaction history (up to 24 months, including merchant name, amount, date, and category)
+Recurring transaction data (subscriptions and recurring payments)
+Investment holdings and balances
+Meridian does NOT collect or store:
+
+Bank login credentials or passwords
+Full account numbers or routing numbers
+Social Security Numbers
+Payment card numbers
+3. Data Retention Schedule
+The following retention periods apply to consumer financial data:
+
+Data Category	Retention Period
+Active account transaction data	Duration of active subscription + 90 days
+Account balance snapshots	Duration of active subscription + 90 days
+Plaid access tokens	Duration of active subscription only — deleted on account closure
+Investment holdings data	Duration of active subscription + 90 days
+Audit and security logs	12 months from creation
+Deleted account data	Purged within 30 days of account deletion request
+4. Data Deletion Procedures
+4.1 User-Initiated Deletion
+Users may request deletion of their account and all associated data at any time through the Meridian app (Settings → Delete Account) or by emailing support@meridianintelligence.com. Upon receiving a verified deletion request, Meridian will:
+
+Immediately revoke all Plaid access tokens associated with the user's linked accounts
+Remove all transaction data, balance data, and financial records from active databases within 7 days
+Purge all remaining user data from backup systems within 30 days
+Send written confirmation to the user's registered email address upon completion
+4.2 Account Inactivity
+Accounts inactive for 24 consecutive months (no login, no active subscription) will be flagged for deletion. Users will receive 30 days written notice before deletion is executed.
+
+4.3 Subscription Cancellation
+Upon subscription cancellation, Meridian retains user data for 90 days to allow for reactivation. After 90 days, all financial data is permanently purged. Account credentials may be retained for up to 12 months to facilitate potential reactivation.
+
+5. Data Security and Storage
+All consumer financial data is stored and protected as follows:
+
+All data is stored in Supabase (hosted on AWS), which provides AES-256 encryption at rest
+All data in transit is encrypted using TLS 1.2 or higher
+Plaid access tokens are stored server-side only and are never transmitted to or stored on user devices
+Row-level security (RLS) policies ensure users can only access their own data
+Administrator access to production systems requires multi-factor authentication (MFA)
+Access to consumer financial data is limited to the minimum necessary for service delivery
+6. Third-Party Data Sharing
+Meridian does not sell, rent, or share consumer financial data with third parties for marketing or advertising purposes. Data may be shared only in the following limited circumstances:
+
+With Plaid, solely to facilitate account connectivity (governed by Plaid's Privacy Policy)
+As required by applicable law, regulation, or valid legal process
+To protect the rights, property, or safety of Meridian, its users, or the public
+7. Compliance
+This policy is designed to comply with applicable data privacy laws and regulations, including:
+
+California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA)
+Gramm-Leach-Bliley Act (GLBA) — Safeguards Rule
+Federal Trade Commission Act (FTC Act)
+Plaid's Developer Policy and Data Use Requirements
+8. Policy Review
+This policy will be reviewed and updated at minimum annually, or when any of the following occur:
+
+Significant changes to data processing practices
+Changes to applicable laws or regulations
+Material changes to third-party integrations including Plaid
+Following any security incident involving consumer financial data
+9. Contact Information
+Questions regarding this policy or data deletion requests should be directed to:
+
+Rodrigo Pagliery
+Chief Executive Officer, Meridian Intelligence Group LLC
+7400 SW 117th St, Pinecrest, FL 33156
+systems.meridian@proton.me
+305-588-6104
+
+Authorized by:
+
+Rodrigo Pagliery, CEO
+Meridian Intelligence Group LLC  |  June 23, 2026
+
+© 2026 Meridian Intelligence Group LLC. All rights reserved.
+Privacy Policy  ·  Terms of Service
